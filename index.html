@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiakiBot</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" tipe="image/jpeg" href="img/icon.jpg" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="titulo">Chiaki Bot</h1>
+
+    <div id="container" class="container">
+        <div class="info">
+            <h2 v-on:click="toggleShowActividades">To Do:</h2>
+            <ul v-show="showActividades">
+                <li v-for="p in actividades" v-kind:key="p">{{p}}</li>
+
+            </ul>
+        </div>
+
+        <img id="chiaki" :src="shiaki" :alt="Chiaki" ondblclick="inicio();">
+
+
+
+    </div>
+
+    <audio id="song" src="/assets/dokidoki.mp3" loop></audio>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="/assets/psot.js"></script>
+    <script src="/assets/jspuro.js"></script>
+    <script src="/assets/audio.js"></script>
+</body>
+
+</html>

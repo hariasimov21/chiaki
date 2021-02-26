@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'EichenlaubInitialen';
+    src: url(/assets/EichenlaubInitialen.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-image: url('/img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Ruge Boogie', cursive;
+    color: #0f1741;
+}
+
+#titulo {
+    text-align: center;
+    font-family: 'Ruge Boogie', cursive;
+    font-size: 100px;
+    margin: 0;
+    background-color: rgba(238, 117, 93, 0.5);
+    padding: 10px 0;
+}
+
+#chiaki {
+    display: grid;
+    max-width: 100%;
+    width: 665px;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info {
+    margin: 0;
+    padding: 20px 100px;
+    background-image: url('/img/menu2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 900px;
+    text-align: left;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.info h2 {
+    margin-top: 40px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.info ul li {
+    font-size: 40px;
+    margin: 0;
+    list-style: none;
+    color: #ffffff;
+}
+
+.info ul li:hover {
+    color: #0f1741;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* 
+// https://lenguajecss.com/css/maquetacion-y-colocacion/grid-css/ */

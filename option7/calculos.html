@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" tipe="image/jpeg" href="../img/icon.jpg" sizes="16x16">
+    <link rel="stylesheet" href="../css/calculos.css">
+    <title>Calculo de monto</title>
+</head>
+
+<body>
+
+    <h1 id="titulo">Calcular tus ingresos y egresos</h1>
+
+    <div class="contenedor-principal">
+        <div class="contenedor">
+            <span>Monto Inicial:</span>
+            <input type="text" id="txt_campo_1" onchange="sumar(this.value);" />
+            <br/>
+            <span>Egresos:  </span>
+            <input type="text" id="txt_campo_2" onchange="restar(this.value);" />
+            <br/>
+            <span>Ingresos: </span>
+            <input type="text" id="txt_campo_3" onchange="sumar(this.value);" />
+            <br/>
+            <br>
+            <span>El resultado es: $ </span> <span id="spTotal"></span>
+
+        </div>
+
+        <img class="chiaki" src="../img/chiakithinking.png" alt="chiaki">
+
+    </div>
+
+
+    <script src="../assets/calculos.js"></script>
+</body>
+
+</html>
